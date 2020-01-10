@@ -1,0 +1,276 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+    background-color: $gray-100;
+    color: $gray-700;
+}
+
+.py-6 {
+    padding: 4rem 0;
+}
+.py-7 {
+    padding: 5.5rem 0;
+}
+.py-8 {
+    padding: 6rem 0;
+}
+
+.pt-6 {
+    padding-top: 4rem;
+}
+.pt-7 {
+    padding-top: 5.5rem;
+}
+.pt-8 {
+    padding-top: 6rem;
+}
+
+.pb-6 {
+    padding-bottom: 4rem;
+}
+.pb-7 {
+    padding-bottom: 5.5rem;
+}
+.pb-8 {
+    padding-bottom: 6rem;
+}
+
+h1{
+    font-family: 'Cedarville Cursive', cursive;
+    color: $gray-900;
+}
+h2{
+    font-family: 'Cutive Mono', monospace;
+    color: $gray-900;
+}
+h3{
+    font-family: 'Cedarville Cursive', cursive;
+    color: $gray-900;
+}
+h4{
+    font-family: 'Cedarville Cursive', cursive;
+    color: $gray-900;
+}
+h5{
+    font-family: 'Cedarville Cursive', cursive;
+    color: $gray-900;
+}
+h6{
+    font-family: 'Cedarville Cursive', cursive;
+    color: $gray-900;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+.whitetxt{
+    color: $white !important;
+}
+
+.resizeMenu{
+    background-color: $gray-900;
+}
+
+/*========================================================MENU*/
+#menu{
+    transition: 0.5s;
+}
+.space-menu{
+    margin-top: 38px;
+}
+
+.navbar{
+    padding: 0px;
+}
+
+.navbar-brand{
+    color: $white !important;
+    font-size: 1.5rem !important;
+}
+
+.nav-item{
+    a{
+        font-size: 16px !important;
+        &.crowdfunding{
+            color: $white!important;
+            background-color: $primary;
+            transition: 0.5s;
+        }
+        &.crowdfunding:hover{
+            background-color: $white;
+            color: $primary !important;
+        }
+    }
+    transition: 0.5s;
+}
+
+.nav-item:hover{
+    background-color: $secondary;
+}
+
+button:focus{
+    outline: inherit !important;
+    span{
+        background-image: url("../img/menuClose.svg") !important;
+    }
+}
+.navbar-toggler{
+    padding: 0px;
+    border: inherit !important;
+}
+
+.navbar-toggler-icon{
+    background-image: url("../img/menu.svg") !important;
+    transition: 0.5s;
+}
+
+a{
+    &.btn-crwd{
+        background-color: $primary !important;
+        color: $white !important;
+        transition: 0.5s;
+    }
+
+    &.btn-top{
+        background-color: $dark;
+        color: $white;
+        border-radius: 0px !important;
+        transition: 0.5s;
+    }
+}
+a:hover{
+    &.btn-top{
+        background-color: #6c757d !important;
+        color: $white !important;
+    }
+
+    &.btn-top{
+        background-color: #6c757d;
+        color: $white;
+    }
+}
+
+.dropdown-item:hover{
+    background-color: $gray-400;
+}
+
+/*========================================================HERO*/
+
+div{
+    &.jumbotron{
+        background-image: url("../img/prova.jpg") !important;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: inherit;
+    }
+    &.banner-top{
+        height: 400px;
+    }
+    div{
+        h2{
+            font-family: 'Cutive Mono', monospace;
+        }
+    }
+}
+
+.hero-text{
+    h1{
+        font-family: "Helvetica Neue" !important;
+        font-size: 40px !important;
+    }
+
+    h2{
+        font-size: 32px !important;
+    }
+}
+
+.cite-top{
+    font-family: 'Cedarville Cursive', cursive;
+    font-size: 22px;
+}
+
+
+/*========================================================VIDEO*/
+
+.box-video{
+    background-image: url("../img/prova.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/*========================================================MAIN*/
+
+.what{
+    background-image: url("../img/what.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.why{
+    background-image: url("../img/why.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.banner-bottom{
+    height: 400px;
+    background-image: url("../img/prova.jpg") !important;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    h1{
+        color: $primary;
+    }
+}
+
+/*========================================================FOOTER*/
+
+footer{
+    background-color: $gray-100;
+}
+
+.cite{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+li{
+    a{
+        color: $gray-900;
+        transition: 0.5s;
+    }
+    a:hover{
+        color: $primary;
+    }
+}
+
+.crwd{
+    color: $primary;
+    transition: 0.5s;
+}
+
+.crwd:hover{
+    color: $gray-900;
+}
+
+.fab{
+    font-size: 25px;
+}
+
+
