@@ -16,8 +16,17 @@ $container = get_theme_mod( 'understrap_container_type' );
 <html <?php language_attributes(); ?>>
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="keywords" content="lioi, fabiano lioi" />
+  	<meta http-equiv="author" content="Psicografici" />
 	<link rel="profile" href="http://gmpg.org/xfn/11">
+	<!--Font Awesome Icons-->
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+	<!--Google fonts-->
+	<link href="https://fonts.googleapis.com/css?family=Cutive+Mono|Gloria+Hallelujah|Cedarville+Cursive&display=swap" rel="stylesheet">
+	
 	<?php wp_head(); ?>
 </head>
 

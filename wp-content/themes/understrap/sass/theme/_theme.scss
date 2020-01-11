@@ -81,6 +81,11 @@ li{
     background-color: $gray-900;
 }
 
+hr{
+    padding: 0;
+    margin: 0;
+}
+
 /*========================================================MENU*/
 #menu{
     transition: 0.5s;
@@ -168,7 +173,7 @@ a:hover{
 
 div{
     &.jumbotron{
-        background-image: url("../img/prova.jpg") !important;
+        background-image: url("<?php echo get_template_directory_uri(); ?>/../../img/prova.jpg") !important;
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -212,15 +217,27 @@ div{
 
 /*========================================================MAIN*/
 
+.car-control{
+    color: $dark;
+    width: inherit !important;
+    transition: 0.5s;
+}
+.car-control:hover{
+    color: $primary;
+}
+.car-control:focus{
+    color: $primary;
+}
+
 .what{
-    background-image: url("../img/what.png");
+    background-image: url("<?php echo get_template_directory_uri(); ?>/../../img/what.png") !important;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .why{
-    background-image: url("../img/why.png");
+    background-image: url("<?php echo get_template_directory_uri(); ?>/../../img/why.png") !important;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -233,8 +250,9 @@ div{
     background-size: cover;
     background-repeat: no-repeat;
 
-    h1{
+    h2{
         color: $primary;
+        font-family: 'Cedarville Cursive', cursive !important;
     }
 }
 
