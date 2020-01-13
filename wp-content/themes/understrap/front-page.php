@@ -20,6 +20,7 @@ get_header();
 
 <?php while ( have_posts() ) : the_post(); ?>
 
+    <!--Jumbotron-->
     <div class="jumbotron banner-top d-flex align-items-center">
         <div class="container text-center hero-text">
             <h1 class="whitetxt"><?php the_field('titolo_pagina'); ?></h1>
@@ -27,6 +28,7 @@ get_header();
         </div>
     </div>
          
+    <!--Double call to action-->
     <div class="container">
 
         <!-- Top call to action -->
@@ -34,15 +36,23 @@ get_header();
         <div class="col-12 col-lg-6">
             <?php 
             $link = get_field('link_1_top');
-            if( $link ): ?>
-                <a class="my-5 btn-crwd btn-top nav-link py-2" href="<?php echo esc_url( $link ); ?>">SOSTIENI IL NOSTRO PROGETTO</a>
+            if( $link ): 
+            $link_url = $link['url'];
+            $link_title = $link['title'];
+            $link_target = $link['target'] ? $link['target'] : '_self';
+            ?>
+            <a class="my-5 btn-top btn-crwd nav-link py-2" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>"><?php echo esc_html( $link_title ); ?></a>
             <?php endif; ?>
         </div>
         <div class="col-12 col-lg-6">
             <?php 
             $link = get_field('link_2_top');
-            if( $link ): ?>
-                <a class="my-5 btn-top nav-link py-2" href="<?php echo esc_url( $link ); ?>">CONTATTACI</a>
+            if( $link ): 
+            $link_url = $link['url'];
+            $link_title = $link['title'];
+            $link_target = $link['target'] ? $link['target'] : '_self';
+            ?>
+            <a class="my-5 btn-top nav-link py-2" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>"><?php echo esc_html( $link_title ); ?></a>
             <?php endif; ?>
         </div>
         </div>
@@ -51,6 +61,7 @@ get_header();
 
     <hr>
 
+    <!--Quote banner-->
     <div class="container text-center">
 
         <!-- Quote -->
@@ -72,6 +83,7 @@ get_header();
         <?php the_field('testo_video_embedded'); ?>
     </div>
 
+    <!--Carousel-->
     <div class="mb-5">
         <div class="container">
                 
@@ -121,6 +133,7 @@ get_header();
 
     <hr>
 
+    <!--What banner-->
     <div class="what">
         <div class="container">
             <h1 class="mt-5"><?php the_field('titolo_paragrafo_1'); ?></h1>
@@ -129,8 +142,12 @@ get_header();
                 <div class="col-12 col-lg-6">
                     <?php 
                     $link = get_field('link_paragrafo_1');
-                    if( $link ): ?>
-                        <a class="btn-top nav-link py-2" href="<?php echo esc_url( $link ); ?>">SCOPRI DI PIU'</a>
+                    if( $link ): 
+                    $link_url = $link['url'];
+                    $link_title = $link['title'];
+                    $link_target = $link['target'] ? $link['target'] : '_self';
+                    ?>
+                    <a class="btn-top nav-link py-2" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>"><?php echo esc_html( $link_title ); ?></a>
                     <?php endif; ?>
                 </div>
             </div>
@@ -139,6 +156,7 @@ get_header();
 
     <hr>
 
+    <!--Why banner-->
     <div class="why">
         <div class="container">
             <h1 class="mt-5"><?php the_field('titolo_paragrafo_2'); ?></h1>
@@ -147,14 +165,19 @@ get_header();
                 <div class="col-12 col-lg-6">
                     <?php 
                     $link = get_field('link_paragrafo_2');
-                    if( $link ): ?>
-                        <a class="btn-top nav-link py-2" href="<?php echo esc_url( $link ); ?>">SCOPRI DI PIU'</a>
+                    if( $link ): 
+                    $link_url = $link['url'];
+                    $link_title = $link['title'];
+                    $link_target = $link['target'] ? $link['target'] : '_self';
+                    ?>
+                    <a class="btn-top nav-link py-2" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>"><?php echo esc_html( $link_title ); ?></a>
                     <?php endif; ?>
                 </div>
             </div>
         </div>
     </div>
 
+    <!--Bottom banner-->
     <div class="banner-bottom d-flex align-items-center">
         <div class="container">
             <h2><?php the_field('descrizione_banner_bottom'); ?></h2>
@@ -162,8 +185,12 @@ get_header();
                 <div class="col-12 col-lg-6">
                     <?php 
                     $link = get_field('link_banner_bottom');
-                    if( $link ): ?>
-                        <a class="btn-crwd btn-top nav-link py-2" href="<?php echo esc_url( $link ); ?>">SOSTIENI IL NOSTRO PROGETTO</a>
+                    if( $link ): 
+                    $link_url = $link['url'];
+                    $link_title = $link['title'];
+                    $link_target = $link['target'] ? $link['target'] : '_self';
+                    ?>
+                    <a class="btn-crwd btn-top nav-link py-2" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>"><?php echo esc_html( $link_title ); ?></a>
                     <?php endif; ?>
                 </div>
             </div>
