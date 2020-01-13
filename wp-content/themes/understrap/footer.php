@@ -15,11 +15,11 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 <?php get_template_part( 'sidebar-templates/sidebar', 'footerfull' ); ?>
 
-<footer class="py-5 cite">
+<footer class="pb-5 cite">
     <div class="container">
       <div class="row">
 
-        <div class="col-12 col-sm-6">
+        <div class="col-12 col-sm-6 pt-5">
 
 		  <h3>Menù</h3>		  
           <ul class="m-0 p-0">
@@ -84,7 +84,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 		  
 		</div>
 		
-        <div class="col-12 col-sm-6">
+        <div class="col-12 col-sm-6 pt-5">
 
 		<h3>Sostieni il nostro progetto</h3>
 		<?php 
@@ -97,7 +97,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 		<a class="crwd" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>"><?php echo esc_html( $link_title ); ?></a>
 		<?php endif; ?>
 
-		<h3 class="mt-5">Mailing list</h3>
+		<h3 class="pt-5">Mailing list</h3>
 		<?php
 		// check if the repeater field has rows of data
 		if( have_rows('mailing_list') ):
@@ -125,7 +125,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 		endif;
 		?>
 
-		<h3 class="mt-5">Social</h3>
+		<h3 class="pt-5">Social</h3>
 		<ul class="p-0 m-0 list-inline">
 			<li class="list-inline-item">
 			<a href="https://www.facebook.com/Fabianolioi/" target="_blank"><i class="fab fa-facebook-f"></i></a>

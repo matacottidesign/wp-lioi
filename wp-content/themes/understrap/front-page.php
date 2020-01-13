@@ -181,7 +181,7 @@ get_header();
     <div class="banner-bottom d-flex align-items-center">
         <div class="container">
             <h2><?php the_field('descrizione_banner_bottom'); ?></h2>
-            <div class="mt-5 row text-center">
+            <div class="row text-center">
                 <div class="col-12 col-lg-6">
                     <?php 
                     $link = get_field('link_banner_bottom');
