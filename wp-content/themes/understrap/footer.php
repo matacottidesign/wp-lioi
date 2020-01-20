@@ -120,6 +120,25 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 <?php wp_footer(); ?>
 
+<!--Hide menu-->
+<script type="text/javascript">
+
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function(){
+
+  var currentScrollpos = window.pageYOffset;
+
+  if(prevScrollpos > currentScrollpos){
+    document.getElementById('menu').style.top = '0';
+  } else {
+    document.getElementById('menu').style.top = '-100px';
+  }
+
+  prevScrollpos = currentScrollpos;
+}
+
+</script>
+
 </body>
 
 </html>

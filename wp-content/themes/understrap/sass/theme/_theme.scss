@@ -2,13 +2,14 @@ body{
     padding: 0;
     margin: 0;
     font-size: 18px;
+    line-height: 1.8 !important;
     background-color: $gray-100;
     color: $gray-700;
 }
 
 .py-6 {
     padding: 4rem 0;
-}
+} 
 .py-7 {
     padding: 5.5rem 0;
 }
@@ -107,17 +108,19 @@ hr{
 .nav-item{
     a{
         font-size: 16px !important;
-        &.crowdfunding{
-            color: $white!important;
-            background-color: $primary;
-            transition: 0.5s;
-        }
-        &.crowdfunding:hover{
-            background-color: $white;
-            color: $primary !important;
-        }
+        color: $white !important;
     }
     transition: 0.5s;
+}
+
+.crowdfunding{
+    color: $white!important;
+    background-color: $primary;
+    transition: 0.5s;
+}
+.crowdfunding:hover{
+    background-color: $white;
+    color: $primary !important;
 }
 
 .nav-item:hover{
@@ -166,9 +169,22 @@ a:hover{
     }
 }
 
-.dropdown-item:hover{
-    background-color: $gray-400;
+a{
+    &.dropdown-item{
+        color: $dark !important;
+    }
+    &.dropdown-item:hover{
+        background-color: inherit !important;
+        color: $white !important;
+    }
+    &.active{
+        background-color: yellow !important;
+        color: $white !important;
+    }
+    
 }
+    
+
 
 /*========================================================HERO*/
 
