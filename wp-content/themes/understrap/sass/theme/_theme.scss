@@ -130,7 +130,7 @@ hr{
 button:focus{
     outline: inherit !important;
     span{
-        background-image: url("../img/menuClose.svg") !important;
+        background-image: url("<?php echo get_template_directory_uri(); ?>/../../img/menu.svg") !important;
     }
 }
 .navbar-toggler{
@@ -141,6 +141,10 @@ button:focus{
 .navbar-toggler-icon{
     background-image: url("../img/menu.svg") !important;
     transition: 0.5s;
+}
+
+.ham-menu{
+    width: 40px;
 }
 
 a{
@@ -170,23 +174,20 @@ a:hover{
 }
 
 .dropdown-menu{
+    background-color: #6c757d;
     li{
         &.menu-item{
-            a{
-                color: $dark !important;
-                transition: 2s;
-            }
             a:hover{
-                background-color: $gray-300;
+                background-color: rgba($color: #000000, $alpha: 0);
             }
         }
 
         &.menu-item:hover{
-            background-color: $gray-300;
+            background-color: $primary;
         }
     }
-    li:active{
-        &.menu-item{
+    li{
+        &.active{
             a{
                 color: $white !important;
             }

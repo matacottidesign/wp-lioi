@@ -63,9 +63,30 @@ $container = get_theme_mod( 'understrap_container_type' );
 						the_custom_logo();
 					} ?><!-- end custom logo -->
 
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
+					<button class="menu navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<!-- <span class="navbar-toggler-icon"></span> -->
+
+						<!--Hamburger menu svg-->
+						<div class="ham-menu">
+							<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+								viewBox="0 0 385 135" style="enable-background:new 0 0 385 135;" xml:space="preserve">
+							<style type="text/css">
+								.st0{display:none;}
+								.st1{display:inline; fill:#fff}
+								.st2{fill:#fff;}
+							</style>
+							<g class="st0">
+								<g id="Menu_1_" class="st1">
+									<path d="M12,25.3h360.9c6.6,0,12-5.4,12-12s-5.4-12-12-12H12c-6.6,0-12,5.4-12,12S5.4,25.3,12,25.3z"/>
+									<path d="M372.9,109.5H132.3c-6.6,0-12,5.4-12,12c0,6.6,5.4,12,12,12h240.6c6.6,0,12-5.4,12-12C385,114.9,379.6,109.5,372.9,109.5z
+										"/>
+								</g>
+							</g>
+							<rect y="1.2" class="st1" width="385" height="25"/>
+							<rect y="109.5" class="st2" width="385" height="25"/>
+							</svg>
+						</div>
+					</button>
 
 				<!-- The WordPress Menu goes here -->
 				<?php wp_nav_menu(
