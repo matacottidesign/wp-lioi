@@ -19,9 +19,8 @@ $container = get_theme_mod( 'understrap_container_type' );
     <div class="container">
       <div class="row">
 
-        <div class="col-12 col-sm-6 pt-5">
+        <div class="col-12 col-sm-4 pt-5">
 
-		  <h3>Menù</h3>		  
           <ul class="m-0 p-0">
             <li class="py-1">
               <a href="#">IL LIBRO</a>
@@ -46,7 +45,15 @@ $container = get_theme_mod( 'understrap_container_type' );
               </ul>
             </li>
 
-            <li class="py-1">
+            
+
+		  </ul>
+		  
+		</div>
+		
+        <div class="col-12 col-sm-4 pt-5">
+        <ul class="m-0 p-0">
+        <li class="py-1">
               <a href="#">L'AUTORE</a>
               <ul>
                 <li>
@@ -79,38 +86,38 @@ $container = get_theme_mod( 'understrap_container_type' );
                 </li>
               </ul>
             </li>
+        </ul>
+        </div>
+    
+    <div class="col-12 col-sm-4 pt-5">
+      <h3>Sostieni il nostro progetto</h3>
+      <a class="crwd" href="#">SCOPRI COME FARE</a>
 
-		  </ul>
-		  
-		</div>
-		
-        <div class="col-12 col-sm-6 pt-5">
+      <h3 class="pt-5">Mailing list</h3>
+      <a class="button" href="mailto:fabianolioi@gmail.com">fabianolioi@gmail.com</a>
+      <a class="button" href="mailto:info@arteinunafrattura.it">info@arteinunafrattura.it</a>
+      <a class="button" href="mailto:press@arteinunafrattura.it">press@arteinunafrattura.it</a>
+      <a class="button" href="mailto:staff@arteinunafrattura.it">staff@arteinunafrattura.it</a>
 
-		<h3>Sostieni il nostro progetto</h3>
-		<a class="crwd" href="#">SCOPRI COME FARE</a>
-
-		<h3 class="pt-5">Mailing list</h3>
-		<a class="button" href="mailto:fabianolioi@gmail.com">fabianolioi@gmail.com</a>
-
-		<h3 class="pt-5">Social</h3>
-		<ul class="p-0 m-0 list-inline">
-			<li class="list-inline-item">
-			<a href="https://www.facebook.com/Fabianolioi/" target="_blank"><i class="fab fa-facebook-f"></i></a>
-			</li>
-			<li class="list-inline-item">
-			<a href="https://twitter.com/FabianoLioi" target="_blank"><i class="fab fa-twitter"></i></a>
-			</li>
-			<li class="list-inline-item">
-			<a href="https://www.instagram.com/fabianolioi/" target="_blank"><i class="fab fa-instagram"></i></a>
-			</li>
-			<li class="list-inline-item">
-			<a href="https://vimeo.com/fabianolioi" target="_blank"><i class="fab fa-vimeo"></i></a>
-			</li>
-			<li class="list-inline-item">
-			<a href="https://www.youtube.com/user/MrFabianoLioi" target="_blank"><i class="fab fa-youtube"></i></a>
-			</li>
-		</ul>
-		</div>
+      <h3 class="pt-5">Social</h3>
+      <ul class="p-0 m-0 list-inline">
+        <li class="list-inline-item">
+        <a href="https://www.facebook.com/Fabianolioi/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        </li>
+        <li class="list-inline-item">
+        <a href="https://twitter.com/FabianoLioi" target="_blank"><i class="fab fa-twitter"></i></a>
+        </li>
+        <li class="list-inline-item">
+        <a href="https://www.instagram.com/fabianolioi/" target="_blank"><i class="fab fa-instagram"></i></a>
+        </li>
+        <li class="list-inline-item">
+        <a href="https://vimeo.com/fabianolioi" target="_blank"><i class="fab fa-vimeo"></i></a>
+        </li>
+        <li class="list-inline-item">
+        <a href="https://www.youtube.com/user/MrFabianoLioi" target="_blank"><i class="fab fa-youtube"></i></a>
+        </li>
+      </ul>
+    </div>
 		
       </div>
     </div>
