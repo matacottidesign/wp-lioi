@@ -24,7 +24,7 @@ get_header();
     <div class="jumbotron banner-top d-flex align-items-center">
         <div class="container text-center hero-text">
             <h1 class="whitetxt"><?php the_field('titolo_pagina'); ?></h1>
-            <h2 class="whitetxt"><?php the_field('sottotitolo_pagina'); ?></h2>
+            <h2 class="whitetxt mt-5"><?php the_field('sottotitolo_pagina'); ?></h2>
         </div>
     </div>
          
@@ -73,7 +73,7 @@ get_header();
     </div> 
 
     <!-- Video box + video text -->
-    <div class="box-video text-center d-flex justify-content-center align-items-center" style="height: 400px;">
+    <div class="box-video text-center d-flex justify-content-center align-items-center" style="height: 700px;">
       <div class="container">
         <?php the_field('video_embedded'); ?>
         <!-- <p class="w-100 d-flex align-items-center justify-content-center" style="background-color: #fff; height: 300px;">BOX VIDEO</p> -->
@@ -190,7 +190,7 @@ get_header();
                     $link_title = $link['title'];
                     $link_target = $link['target'] ? $link['target'] : '_self';
                     ?>
-                    <a class="btn-crwd btn-top nav-link py-2" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>"><?php echo esc_html( $link_title ); ?></a>
+                    <a class="btn-crwd btn-top nav-link mt-5" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>"><?php echo esc_html( $link_title ); ?></a>
                     <?php endif; ?>
                 </div>
             </div>

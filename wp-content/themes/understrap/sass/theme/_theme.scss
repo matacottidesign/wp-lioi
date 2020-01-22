@@ -208,8 +208,8 @@ div{
         background-repeat: no-repeat;
         border-radius: inherit;
     }
-    &.banner-top{
-        height: 400px;
+    &.banner-top{ 
+        height: 700px !important;
     }
     div{
         h2{
@@ -273,8 +273,8 @@ div{
 }
 
 .banner-bottom{
-    height: 400px;
-    background-image: url("<?php echo get_template_directory_uri(); ?>/../../img/prova.jpg") !important;
+    height: 700px;
+    background-image: url("<?php echo get_template_directory_uri(); ?>/../../img/box4-img.jpg") !important;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -322,7 +322,7 @@ li{
 
 //Pagina IL LIBRO
 .banner-top-page{
-    height: 400px;
+    height: 700px !important;
     background-image: url("<?php echo get_template_directory_uri(); ?>/../../img/prova.jpg") !important;
     background-position: center;
     background-size: cover;
@@ -353,4 +353,8 @@ li{
     overflow-y: scroll;
 } */
 
+iframe{
+    width: 100%;
+    height: 550px;
+}
 
