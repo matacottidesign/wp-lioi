@@ -127,6 +127,14 @@ hr{
     background-color: $secondary;
 }
 
+#main-menu{
+    li{
+        &.active{
+            background-color: $secondary;
+        }
+    }
+}
+
 button:focus{
     outline: inherit !important;
     span{
