@@ -23,13 +23,29 @@ $container = get_theme_mod( 'understrap_container_type' );
 <div class="container">
 
   <div class="py-8">
+    <?php the_field('incipit'); ?>
+  </div>
+
+  <div class="pb-8">
     <h1><?php the_field('titolo1'); ?></h1>
     <?php the_field('descrizione1'); ?>
   </div>
 
   <div class="pb-8">
     <h1><?php the_field('titolo2'); ?></h1>
-    <?php the_field('descrizione2'); ?>
+    <?php the_field('descrizione2.1'); ?>
+  </div>
+
+  <div class="pb-8">
+    <?php 
+    $image = get_field('immagine');
+    if( !empty( $image ) ): ?>
+        <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+    <?php endif; ?>
+  </div>
+
+  <div class="pb-8">
+    <?php the_field('descrizione2.1'); ?>
   </div>
 
   <div class="pb-8">
