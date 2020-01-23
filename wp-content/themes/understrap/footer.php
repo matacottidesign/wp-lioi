@@ -15,11 +15,11 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 <?php get_template_part( 'sidebar-templates/sidebar', 'footerfull' ); ?>
 
-<footer class="pb-5 cite">
+<footer class="pb-8 cite">
     <div class="container">
       <div class="row">
 
-        <div class="col-12 col-sm-4 pt-5">
+        <div class="col-12 col-sm-4 pt-8">
 
           <ul class="m-0 p-0">
             <li class="py-1">
@@ -51,7 +51,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 		  
 		</div>
 		
-        <div class="col-12 col-sm-4 pt-5">
+        <div class="col-12 col-sm-4 pt-8">
         <ul class="m-0 p-0">
         <li class="py-1">
               <a href="#">L'AUTORE</a>
@@ -89,7 +89,7 @@ $container = get_theme_mod( 'understrap_container_type' );
         </ul>
         </div>
     
-    <div class="col-12 col-sm-4 pt-5">
+    <div class="col-12 col-sm-4 pt-8">
       <h3>Sostieni il nostro progetto</h3>
       <a class="crwd" href="#">SCOPRI COME FARE</a>
 

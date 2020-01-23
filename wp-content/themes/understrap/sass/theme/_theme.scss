@@ -267,14 +267,14 @@ div{
 }
 
 .what{
-    background-image: url("<?php echo get_template_directory_uri(); ?>/../../img/what.png") !important;
+    background-image: url("<?php echo get_template_directory_uri(); ?>/../../img/what.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .why{
-    background-image: url("<?php echo get_template_directory_uri(); ?>/../../img/why.png") !important;
+    background-image: url("<?php echo get_template_directory_uri(); ?>/../../img/why.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;

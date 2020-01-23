@@ -65,7 +65,7 @@ get_header();
     <div class="container text-center">
 
         <!-- Quote -->
-        <div class="my-5">
+        <div class="py-8">
         <i class="cite-top"><?php the_field('citazione_home'); ?></i>
         <i><?php the_field('autore_citazione'); ?></i>
         </div>
@@ -79,12 +79,14 @@ get_header();
         <!-- <p class="w-100 d-flex align-items-center justify-content-center" style="background-color: #fff; height: 300px;">BOX VIDEO</p> -->
       </div>
     </div>
-    <div class="my-5 container">
-        <?php the_field('testo_video_embedded'); ?>
+    <div class="py-8">
+        <div class="container">
+            <?php the_field('testo_video_embedded'); ?>
+        </div>
     </div>
 
     <!--Carousel-->
-    <div class="mb-5">
+    <div class="pb-8">
         <div class="container">
                 
                 <?php
@@ -134,11 +136,11 @@ get_header();
     <hr>
 
     <!--What banner-->
-    <div class="what">
+    <div class="what py-8">
         <div class="container">
-            <h1 class="mt-5"><?php the_field('titolo_paragrafo_1'); ?></h1>
+            <h1><?php the_field('titolo_paragrafo_1'); ?></h1>
             <?php the_field('descrizione_paragrafo_1'); ?>
-            <div class="my-5 row text-center">
+            <div class="mt-5 row text-center">
                 <div class="col-12 col-lg-6">
                     <?php 
                     $link = get_field('link_paragrafo_1');
@@ -157,11 +159,11 @@ get_header();
     <hr>
 
     <!--Why banner-->
-    <div class="why">
+    <div class="why py-8">
         <div class="container">
-            <h1 class="mt-5"><?php the_field('titolo_paragrafo_2'); ?></h1>
+            <h1><?php the_field('titolo_paragrafo_2'); ?></h1>
             <?php the_field('descrizione_paragrafo_2'); ?>
-            <div class="my-5 row text-center">
+            <div class="mt-5 row text-center">
                 <div class="col-12 col-lg-6">
                     <?php 
                     $link = get_field('link_paragrafo_2');

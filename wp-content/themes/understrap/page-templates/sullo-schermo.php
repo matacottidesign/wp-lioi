@@ -20,43 +20,52 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 
 <div class="banner-top-page"></div>
-<div class="container">
 
-  <div class="py-8">
-    <div class="row">
-        <div class="col-12 col-sm-6">
-        <h1><?php the_field('titolo_video_intervista'); ?></h1>
-        <?php the_field('descrizione_video_intervista'); ?>
-        </div>
-        <div class="col-12 col-sm-6 embed-container">
-        <?php the_field('video_intervista'); ?>
-        </div>
-    </div>
-  </div>
-  <div class="pb-8">
-    <div class="row">
-        <div class="col-12 col-sm-6">
-        <h1><?php the_field('titolo_showreel'); ?></h1>
-        <?php the_field('descrizione_showreel'); ?>
-        </div>
-        <div class="col-12 col-sm-6 embed-container">
-        <?php the_field('showreel'); ?>
-        </div>
-    </div>
-  </div>
-  <div class="pb-8">
-    <div class="row">
-        <div class="col-12 col-sm-6">
-        <h1><?php the_field('titolo_intervista_terzi'); ?></h1>
-        <?php the_field('descrizione_intervista_terzi'); ?>
-        </div>
-        <div class="col-12 col-sm-6 embed-container">
-        <?php the_field('intervista_terzi'); ?>
-        </div>
+  <div class="container">
+    <div class="py-8">
+      <div class="row">
+          <div class="col-12 col-sm-6">
+          <h1><?php the_field('titolo_video_intervista'); ?></h1>
+          <?php the_field('descrizione_video_intervista'); ?>
+          </div>
+          <div class="col-12 col-sm-6 embed-container">
+          <?php the_field('video_intervista'); ?>
+          </div>
+      </div>
     </div>
   </div>
 
-</div>
+  <hr>
+
+  <div class="container">
+    <div class="py-8">
+      <div class="row">
+          <div class="col-12 col-sm-6">
+          <h1><?php the_field('titolo_showreel'); ?></h1>
+          <?php the_field('descrizione_showreel'); ?>
+          </div>
+          <div class="col-12 col-sm-6 embed-container">
+          <?php the_field('showreel'); ?>
+          </div>
+      </div>
+    </div>
+  </div>
+  
+  <hr>
+
+  <div class="container">
+    <div class="py-8">
+      <div class="row">
+          <div class="col-12 col-sm-6">
+          <h1><?php the_field('titolo_intervista_terzi'); ?></h1>
+          <?php the_field('descrizione_intervista_terzi'); ?>
+          </div>
+          <div class="col-12 col-sm-6 embed-container">
+          <?php the_field('intervista_terzi'); ?>
+          </div>
+      </div>
+    </div>
+  </div>
  
 <hr>
 
