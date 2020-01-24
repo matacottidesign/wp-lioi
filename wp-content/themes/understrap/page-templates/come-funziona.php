@@ -37,11 +37,13 @@ $container = get_theme_mod( 'understrap_container_type' );
   </div>
 
   <div class="pb-8">
+    <div class="infographic">
     <?php 
     $image = get_field('immagine');
     if( !empty( $image ) ): ?>
         <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
     <?php endif; ?>
+    </div>
   </div>
 
   <div class="pb-8">
