@@ -366,3 +366,50 @@ iframe{
     height: 550px;
 }
 
+
+
+
+
+//IL BLOG
+
+
+    div{
+        &.card{
+            div{
+                &.avatar{
+                    position: relative;
+                    top: -50px;
+                    margin-bottom: -50px;
+            
+                    img{
+                        width: 100px;
+                        height: 100px;
+                        max-width: 100px;
+                        max-height: 100px;
+                        -webkit-border-radius: 50%;
+                        -moz-border-radius: 50%;
+                        border-radius: 50%;
+                        border: 1px solid rgba(0,0,0,.125);
+                    }
+                }
+            }
+            div{
+                &.card-body{
+                    h1{
+                        color: $primary;
+                        font-size: 28px;
+                    }
+                }
+            }
+            div{
+                &.card-footer{
+                    color: $gray-600;
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+
+
+
+
