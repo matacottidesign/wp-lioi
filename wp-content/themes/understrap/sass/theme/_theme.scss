@@ -460,17 +460,13 @@ aside{
 
 //CONTATTI
 .modulo-contatti{
-    label{
-        color: $primary;
+    span{
+        input{
+            border-radius: inherit !important;
+        }
 
-        span{
-            input{
-                border-radius: inherit !important;
-            }
-
-            textarea{
-                border-radius: inherit !important;
-            }
+        textarea{
+            border-radius: inherit !important;
         }
     }
 
