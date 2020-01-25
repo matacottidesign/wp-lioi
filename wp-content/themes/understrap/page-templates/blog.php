@@ -53,7 +53,7 @@ $container = get_theme_mod( 'understrap_container_type' );
         ?>
 
         <div class="col-12 col-lg-4 pt-8">
-            <div class="card">
+            <div class="card blog-card">
                 <?php 
                 $image = get_sub_field('copertina');
                 if( !empty( $image ) ): ?>

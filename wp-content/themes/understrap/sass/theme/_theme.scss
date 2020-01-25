@@ -197,7 +197,23 @@ a:hover{
     }
 }
 
-    
+/*===============================================ACCESSIBILITY*/
+.accessibility{
+    div{
+        button{
+            border-radius: inherit;
+            border: inherit;
+        }
+        button:nth-child(1){
+            background-color: #0a0;
+            color: $white;
+        }
+        button:nth-child(2){
+            background-color: darkgreen;
+            color: $white;
+        }
+    }
+}    
 
 
 /*========================================================HERO*/
@@ -370,13 +386,9 @@ iframe{
 }
 
 
-
-
-
 //IL BLOG
-
 div{
-    &.card{
+    &.blog-card{
         border: inherit;
         border-radius: inherit !important;
         transition: 0.5s;
@@ -427,7 +439,7 @@ div{
         }
     }
 
-    .card:hover{
+    .blog-card:hover{
         transform: scale(1.01);
         box-shadow: 0px 0px 30px #777;
     }

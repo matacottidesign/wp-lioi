@@ -107,6 +107,15 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 		</nav><!-- .site-navigation -->
 
+		<div class="accessibility bg-secondary">
+			<div class="container">
+			<button type="button" class="btn btn-success" onclick="default_bg()">A</button>
+			<button type="button" class="btn btn-success" onclick="dark_bg()"><b>A</b></button>
+			<button type="button" class="btn btn-light" onclick="resizeText(-1)">A</button>
+			<button type="button" class="btn btn-light" onclick="resizeText(1)"><b>A</b></button>
+			</div>
+		</div>
+
 	</div><!-- #wrapper-navbar end -->
 
-	<section style="margin-top: 80px;"></section>
+	<section style="margin-top: 79px;"></section>

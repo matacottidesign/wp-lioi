@@ -127,6 +127,33 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 <?php wp_footer(); ?>
 
+<!--Accessibility-->
+<script>
+function default_bg() {
+  document.body.style.backgroundColor = "initial";
+  document.body.style.color = "initial";
+}
+
+function dark_bg() {
+  document.body.style.backgroundColor = "#343a40";
+  document.body.style.color = "white";
+}
+
+function resizeText(multiplier) {
+  if (document.body.style.fontSize == "") {
+    document.body.style.fontSize = "1.313em";
+  }
+  document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.2) + "em";
+}
+</script>
+
+
+<!--Resize text js-->
+<script type="text/javascript">
+    
+  </script>
+
+
 <!--Hide menu-->
 <script type="text/javascript">
 
