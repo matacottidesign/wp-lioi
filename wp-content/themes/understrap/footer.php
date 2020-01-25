@@ -130,8 +130,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 <!--Accessibility-->
 <script>
 function default_bg() {
-  document.body.style.backgroundColor = "initial";
-  document.body.style.color = "initial";
+  document.body.style.backgroundColor = "#f8f9fa";
+  document.body.style.color = "#343a40";
 }
 
 function dark_bg() {
