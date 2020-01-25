@@ -38,28 +38,22 @@ body{
 }
 
 h1{
-    font-family: 'Cedarville Cursive', cursive;
-    color: $gray-900;
+    @include stile-titoli;
 }
 h2{
-    font-family: 'Cutive Mono', monospace;
-    color: $gray-900;
+    @include stile-titoli;
 }
 h3{
-    font-family: 'Cedarville Cursive', cursive;
-    color: $gray-900;
+    @include stile-titoli;
 }
 h4{
-    font-family: 'Cedarville Cursive', cursive;
-    color: $gray-900;
+    @include stile-titoli;
 }
 h5{
-    font-family: 'Cedarville Cursive', cursive;
-    color: $gray-900;
+    @include stile-titoli;
 }
 h6{
-    font-family: 'Cedarville Cursive', cursive;
-    color: $gray-900;
+    @include stile-titoli;
 }
 
 a{
