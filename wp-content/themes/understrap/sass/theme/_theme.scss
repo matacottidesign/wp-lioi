@@ -458,4 +458,26 @@ aside{
 }
 
 
+//CONTATTI
+.modulo-contatti{
+    label{
+        color: $primary;
+
+        span{
+            input{
+                border-radius: inherit !important;
+            }
+
+            textarea{
+                border-radius: inherit !important;
+            }
+        }
+    }
+
+    input{
+        border-radius: inherit !important;
+    }
+}
+
+
 

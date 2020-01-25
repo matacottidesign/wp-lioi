@@ -22,12 +22,13 @@ $container = get_theme_mod( 'understrap_container_type' );
 <div class="banner-top-page"></div>
 <div class="container">
 
-  <div class="py-8">
-    <?php the_field('incipit'); ?>
-  </div>
-
-  <div class="pb-8">
-    <?php the_field('intervista'); ?>
+  <div class="row py-8">
+      <div class="col-12 col-md-6 modulo-contatti">
+            <?php the_field('editor_di_testo_2'); ?>
+      </div>
+      <div class="col-12 col-md-6">
+            <?php the_field('testo_form_2'); ?>
+      </div>
   </div>
 
 </div>
