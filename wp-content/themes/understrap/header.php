@@ -13,7 +13,7 @@ defined( 'ABSPATH' ) || exit;
 $container = get_theme_mod( 'understrap_container_type' );
 ?>
 <!DOCTYPE html>
-<html <?php language_attributes(); ?>>
+<html  <?php language_attributes(); ?>>
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -108,11 +108,11 @@ $container = get_theme_mod( 'understrap_container_type' );
 		</nav><!-- .site-navigation -->
 
 		<div class="accessibility bg-secondary">
-			<div class="container">
+			<div class="container d-flex justify-content-end">
 			<button type="button" class="btn btn-success" onclick="default_bg()">A</button>
-			<button type="button" class="btn btn-success" onclick="dark_bg()"><b>A</b></button>
-			<button type="button" class="btn btn-light" onclick="resizeText(-1)">A</button>
-			<button type="button" class="btn btn-light" onclick="resizeText(1)"><b>A</b></button>
+			<button type="button" class="btn btn-success ml-2" onclick="dark_bg()"><b>A</b></button>
+			<button type="button" class="btn btn-light ml-2" onclick="resizeText(-1)">A</button>
+			<button type="button" class="btn btn-light ml-2" onclick="resizeText(1)"><b>A</b></button>
 			</div>
 		</div>
 

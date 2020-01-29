@@ -243,13 +243,15 @@ div{
     }
 
     h2{
+        font-family: 'Cutive Mono', monospace !important;
         font-size: 32px !important;
     }
 }
 
 .cite-top{
     font-family: 'Cedarville Cursive', cursive;
-    font-size: 22px;
+    font-size: 30px;
+    color: #000;
 }
 
 
@@ -306,7 +308,13 @@ div{
 /*========================================================FOOTER*/
 
 footer{
-    background-color: $gray-100;
+    background-color: $gray-100; 
+} 
+
+button{
+    &.#bottom-btn{
+        transition: 0.5s;
+    }
 }
 
 .cite{
@@ -340,10 +348,10 @@ li{
 
 //Pagina IL LIBRO
 .banner-top-page{
-    height: 700px !important;
+    height: 350px !important;
     background-image: url("<?php echo get_template_directory_uri(); ?>/../../img/prova.jpg") !important;
     background-position: center;
-    background-size: cover;
+    background-size: cover; 
     background-repeat: no-repeat;
 }
 

@@ -24,7 +24,7 @@ get_header();
     <div class="jumbotron banner-top d-flex align-items-center">
         <div class="container text-center hero-text">
             <h1 class="whitetxt"><?php the_field('titolo_pagina'); ?></h1>
-            <h2 style="font-family: 'Cutive Mono', monospace !important;" class="whitetxt mt-5"><?php the_field('sottotitolo_pagina'); ?></h2>
+            <h2 class="whitetxt mt-5"><?php the_field('sottotitolo_pagina'); ?></h2>
         </div>
     </div>
          
@@ -65,7 +65,7 @@ get_header();
     <div class="container text-center">
 
         <!-- Quote -->
-        <div class="py-8">
+        <div class="py-8 kim">
         <i class="cite-top"><?php the_field('citazione_home'); ?></i>
         <i><?php the_field('autore_citazione'); ?></i>
         </div>

@@ -15,6 +15,12 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 <?php get_template_part( 'sidebar-templates/sidebar', 'footerfull' ); ?>
 
+
+  <div class="fixed-bottom mb-3 mr-3 text-right bottom-btn">
+    <button id="bottom-btn" type="button" class="btn btn-primary" onclick="hideButton()">SOSTIENI IL <br> NOSTRO PROGETTO</button>
+  </div>
+
+
 <footer class="pb-8 cite">
     <div class="container">
       <div class="row">
@@ -93,8 +99,7 @@ $container = get_theme_mod( 'understrap_container_type' );
       <h3>Sostieni il nostro progetto</h3>
       <a class="crwd" href="#">SCOPRI COME FARE</a>
 
-      <h3 class="pt-5">Mailing list</h3>
-      <a class="button" href="mailto:fabianolioi@gmail.com">fabianolioi@gmail.com</a>
+      <h3 class="pt-5">Contatti</h3>
       <a class="button" href="mailto:info@arteinunafrattura.it">info@arteinunafrattura.it</a>
       <a class="button" href="mailto:press@arteinunafrattura.it">press@arteinunafrattura.it</a>
       <a class="button" href="mailto:staff@arteinunafrattura.it">staff@arteinunafrattura.it</a>
@@ -103,9 +108,6 @@ $container = get_theme_mod( 'understrap_container_type' );
       <ul class="p-0 m-0 list-inline">
         <li class="list-inline-item">
         <a href="https://www.facebook.com/Fabianolioi/" target="_blank"><i class="fab fa-facebook-f"></i></a>
-        </li>
-        <li class="list-inline-item">
-        <a href="https://twitter.com/FabianoLioi" target="_blank"><i class="fab fa-twitter"></i></a>
         </li>
         <li class="list-inline-item">
         <a href="https://www.instagram.com/fabianolioi/" target="_blank"><i class="fab fa-instagram"></i></a>
@@ -128,7 +130,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 <?php wp_footer(); ?>
 
 <!--Accessibility-->
-<script>
+<script type="text/javascript">
 function default_bg() {
   document.body.style.backgroundColor = "#f8f9fa";
   document.body.style.color = "#343a40";
@@ -148,12 +150,6 @@ function resizeText(multiplier) {
 </script>
 
 
-<!--Resize text js-->
-<script type="text/javascript">
-    
-  </script>
-
-
 <!--Hide menu-->
 <script type="text/javascript">
 
@@ -164,8 +160,10 @@ window.onscroll = function(){
 
   if(prevScrollpos > currentScrollpos){
     document.getElementById('menu').style.top = '0';
+    document.getElementById('bottom-btn').style.opacity = '1';
   } else {
     document.getElementById('menu').style.top = '-100px';
+    document.getElementById('bottom-btn').style.opacity = '0';
   }
 
   prevScrollpos = currentScrollpos;

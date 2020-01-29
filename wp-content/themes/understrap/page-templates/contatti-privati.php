@@ -18,8 +18,6 @@ $container = get_theme_mod( 'understrap_container_type' );
   <?php get_template_part( 'global-templates/hero' ); ?>
 <?php endif; ?>
 
-
-<div class="banner-top-page"></div>
 <div class="container">
 
   <div class="row py-8">
