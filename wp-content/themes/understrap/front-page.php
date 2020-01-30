@@ -66,7 +66,7 @@ get_header();
 
         <!-- Quote -->
         <div class="py-8 kim">
-        <i class="cite-top"><?php the_field('citazione_home'); ?></i>
+        <i id="citazione" class="cite-top"><?php the_field('citazione_home'); ?></i>
         <i><?php the_field('autore_citazione'); ?></i>
         </div>
         
@@ -180,10 +180,10 @@ get_header();
     </div>
 
     <!--Bottom banner-->
-    <div class="banner-bottom d-flex align-items-center">
+    <div class="banner-bottom d-flex align-items-end pb-5">
         <div class="container">
             <h2><?php the_field('descrizione_banner_bottom'); ?></h2>
-            <div class="row text-center">
+            <div class="row text-center d-flex justify-content-center">
                 <div class="col-12 col-lg-6">
                     <?php 
                     $link = get_field('link_banner_bottom');

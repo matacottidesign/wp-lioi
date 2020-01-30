@@ -295,13 +295,13 @@ div{
 
 .banner-bottom{
     height: 700px;
-    background-image: url("<?php echo get_template_directory_uri(); ?>/../../img/box4-img.jpg") !important;
+    background-image: url("<?php echo get_template_directory_uri(); ?>/../../img/box4-img2.jpg") !important;
     background-position: center;
-    background-size: cover;
+    background-size: cover; 
     background-repeat: no-repeat;
 
     h2{
-        color: $primary;
+        color: $primary; 
         font-family: 'Cedarville Cursive', cursive !important;
     }
 }
@@ -315,6 +315,7 @@ footer{
 button{
     &#bottom-btn{
         transition: 0.5s;
+        border-radius: inherit;
     }
 }
 
