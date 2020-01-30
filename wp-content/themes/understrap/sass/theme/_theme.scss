@@ -455,6 +455,7 @@ li{
 .book{
     background-image: linear-gradient(#555, #111);
     box-shadow: 0px 0px 5px #555555;
+    transition: 0.5s;
 }
 .book-page{
     height: 500px;
@@ -466,14 +467,11 @@ li{
     font-size: 25px;
     font-family: 'Cedarville Cursive', cursive;
     overflow-y: scroll;
-    //box-shadow: 0px 0px 5px #555555;
 }
-/* .page p{
-    line-height: 2.5;
-    font-size: 25px;
-    font-family: 'Cedarville Cursive', cursive;
-    overflow-y: scroll;
-} */
+.book:hover{
+    transform: scale(1.01);
+    box-shadow: 0px 0px 30px #777;
+}
 
 iframe{
     width: 100%;
