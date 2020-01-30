@@ -1,4 +1,5 @@
 body{
+    transition: 0.5s;
     padding: 0;
     margin: 0;
     font-size: 18px;
@@ -8,7 +9,7 @@ body{
 }
 
 .py-6 {
-    padding: 4rem 0;
+    padding: 4rem 0; 
 } 
 .py-7 {
     padding: 5.5rem 0;
@@ -310,9 +311,9 @@ div{
 footer{
     background-color: $gray-100; 
 } 
-
+ 
 button{
-    &.#bottom-btn{
+    &#bottom-btn{
         transition: 0.5s;
     }
 }

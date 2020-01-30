@@ -134,11 +134,73 @@ $container = get_theme_mod( 'understrap_container_type' );
 function default_bg() {
   document.body.style.backgroundColor = "#f8f9fa";
   document.body.style.color = "#343a40";
+
+  var h1 = document.getElementsByTagName("H1");
+  var i;
+  for (i = 0; i < h1.length; i++) {
+    h1[i].style.color = "#343a40";
+  }
+
+  var h2 = document.getElementsByTagName("H2");
+  var i;
+  for (i = 0; i < h2.length; i++) {
+    h2[i].style.color = "#343a40";
+  }
+
+  var h3 = document.getElementsByTagName("H3");
+  var i;
+  for (i = 0; i < h3.length; i++) {
+    h3[i].style.color = "#343a40";
+  }
+
+  var a = document.getElementsByTagName("A");
+  var i;
+  for (i = 0; i < a.length; i++) {
+    a[i].style.color = "#343a40";
+  }
+
+  var footer = document.getElementsByTagName("FOOTER");
+  var i;
+  for (i = 0; i < footer.length; i++) {
+    footer[i].style.backgroundColor = "#f8f9fa";
+  }
+
 }
 
 function dark_bg() {
   document.body.style.backgroundColor = "#343a40";
-  document.body.style.color = "white";
+  document.body.style.color = "#fff";
+  
+  var h1 = document.getElementsByTagName("H1");
+  var i;
+  for (i = 0; i < h1.length; i++) {
+    h1[i].style.color = "#fff";
+  }
+
+  var h2 = document.getElementsByTagName("H2");
+  var i;
+  for (i = 0; i < h2.length; i++) {
+    h2[i].style.color = "#fff";
+  }
+
+  var h3 = document.getElementsByTagName("H3");
+  var i;
+  for (i = 0; i < h3.length; i++) {
+    h3[i].style.color = "#fff";
+  }
+
+  var a = document.getElementsByTagName("A");
+  var i;
+  for (i = 0; i < a.length; i++) {
+    a[i].style.color = "#fff";
+  }
+
+  var footer = document.getElementsByTagName("FOOTER");
+  var i;
+  for (i = 0; i < footer.length; i++) {
+    footer[i].style.backgroundColor = "#343a40";
+  }
+  
 }
 
 function resizeText(multiplier) {
