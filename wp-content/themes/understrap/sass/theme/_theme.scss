@@ -73,6 +73,10 @@ li{
     color: $white !important;
 }
 
+.primarytxt{
+    color: $primary !important;
+}
+
 .resizeMenu{
     background-color: $gray-900;
 }
@@ -359,11 +363,57 @@ li{
 
 //IL CROWDFUNDING - COME FUNZIONA
 .infographic{
+    border: inherit;
+    border-radius: inherit;
+    background-color: $gray-100;
+
+    h1{
+        color: $primary;
+    }
+
+    .card-header{
+        background-color: $primary;
+        color: $white;
+        height: 280px;
+
+        p{
+            margin: 0;
+
+            &.head-num{
+                font-size: 60px;
+            }
+
+            font-size: 17px;
+        }
+
+        h2{
+            font-size: 38px;
+            color: $white; 
+        }
+    }
+
+    .card-body{
+        height: 530px;
+
+        .card-icon{
+            font-size: 60px;
+            margin-bottom: 2rem;
+            margin-top: 1rem;
+        }
+    }
+}
+
+.info-subcard{
+    border: inherit;
+    border-radius: inherit;
+    background-color: $gray-100;
     transition: 0.5s;
 }
-.infographic:hover{
+
+.info-subcard:hover{
     transform: scale(1.01);
     box-shadow: 0px 0px 30px #777;
+    background-color: $white; 
 }
 
 //Pagina LA PAGINA DEI RINTRAZIAMENTI
