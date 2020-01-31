@@ -21,10 +21,10 @@ $container = get_theme_mod( 'understrap_container_type' );
 <div class="container">
 
   <div class="row py-8">
-      <div class="col-12 col-md-6 modulo-contatti">
+      <div class="col-12 col-lg-6 modulo-contatti">
             <?php the_field('editor_di_testo'); ?>
       </div>
-      <div class="col-12 col-md-6">
+      <div class="col-12 col-lg-6">
             <?php the_field('testo_form'); ?>
       </div>
   </div>

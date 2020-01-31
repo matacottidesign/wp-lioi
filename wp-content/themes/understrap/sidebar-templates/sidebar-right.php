@@ -28,11 +28,8 @@ $sidebar_pos = get_theme_mod( 'understrap_sidebar_position' );
 		<hr class="my-3">
 
 		<h3 class="pr-color">Contattaci</h3>
-		<p>Compila il modulo per ordinare <i>O.I. L'arte in una frattura</i> o se sei un'azienda per collaborazioni lavorative. Cosa sei?</p>
-		<div class="d-flex justify-content-between">
-		<a href="#">Privato</a>
-		<a href="#">Azienda</a>
-		</div>
+		<p>Sei interessata/o al nostro progetto e vuoi saperne di più? Compila il form e inviaci un messaggio: saremo felici di ricontattarti via email!</p>
+		<a href="#">Vai al form</a>
 		<hr class="my-3">
 	</div>
 
