@@ -59,13 +59,13 @@ get_header();
 
     </div>
 
-    <hr>
+    <div class="why" style="height: 300px"></div>
 
     <!--Quote banner-->
     <div class="container text-center">
 
         <!-- Quote -->
-        <div class="py-8 kim">
+        <div class="pb-8 pt-5 kim">
         <i id="citazione" class="cite-top"><?php the_field('citazione_home'); ?></i>
         <i><?php the_field('autore_citazione'); ?></i>
         </div>
@@ -79,14 +79,14 @@ get_header();
         <!-- <p class="w-100 d-flex align-items-center justify-content-center" style="background-color: #fff; height: 300px;">BOX VIDEO</p> -->
       </div>
     </div>
-    <div class="py-8">
+    <div class="pt-8">
         <div class="container">
             <?php the_field('testo_video_embedded'); ?>
         </div>
     </div>
 
     <!--Carousel-->
-    <div class="pb-8">
+    <div class="pb-3">
         <div class="container">
                 
                 <?php
@@ -133,33 +133,54 @@ get_header();
         </div>
     </div>
 
-    <hr>
-
-    <!--What banner-->
-    <div class="what py-8">
-        <div class="container">
-            <h1><?php the_field('titolo_paragrafo_1'); ?></h1>
-            <?php the_field('descrizione_paragrafo_1'); ?>
-            <div class="mt-5 row text-center">
-                <div class="col-12 col-lg-6">
-                    <?php 
-                    $link = get_field('link_paragrafo_1');
-                    if( $link ): 
-                    $link_url = $link['url'];
-                    $link_title = $link['title'];
-                    $link_target = $link['target'] ? $link['target'] : '_self';
-                    ?>
-                    <a class="btn-top nav-link py-2" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>"><?php echo esc_html( $link_title ); ?></a>
-                    <?php endif; ?>
-                </div>
+    <!--CTA-->
+    <div class="container">
+        <div class="row text-center d-flex justify-content-center">
+            <div class="col-12 col-sm-6">
+                <?php 
+                $link = get_field('link_cta');
+                if( $link ): 
+                $link_url = $link['url'];
+                $link_title = $link['title'];
+                $link_target = $link['target'] ? $link['target'] : '_self';
+                ?>
+                <a class="btn-crwd btn-top nav-link mt-5" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>"><?php echo esc_html( $link_title ); ?></a>
+                <?php endif; ?>
             </div>
         </div>
     </div>
+    
 
-    <hr>
+    
+    <div class="what" style="height: 300px"></div>
+    
+
+    <!--What banner-->
+    <div class="container">
+        <h1><?php the_field('titolo_paragrafo_1'); ?></h1>
+        <?php the_field('descrizione_paragrafo_1'); ?>
+        <div class="mt-5 row text-center">
+            <div class="col-12 col-lg-6">
+                <?php 
+                $link = get_field('link_paragrafo_1');
+                if( $link ): 
+                $link_url = $link['url'];
+                $link_title = $link['title'];
+                $link_target = $link['target'] ? $link['target'] : '_self';
+                ?>
+                <a class="btn-top nav-link py-2" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>"><?php echo esc_html( $link_title ); ?></a>
+                <?php endif; ?>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <div class="why" style="height: 300px"></div>
+    
 
     <!--Why banner-->
-    <div class="why py-8">
+    <div class="pb-8">
         <div class="container">
             <h1><?php the_field('titolo_paragrafo_2'); ?></h1>
             <?php the_field('descrizione_paragrafo_2'); ?>

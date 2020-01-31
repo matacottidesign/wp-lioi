@@ -119,6 +119,25 @@ $container = get_theme_mod( 'understrap_container_type' );
     <?php the_field('descrizione3'); ?>
   </div>
 
+  <!--CTA-->
+  <div class="pb-8">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-12 col-sm-6">
+                <?php 
+                $link = get_field('link_cta');
+                if( $link ): 
+                $link_url = $link['url'];
+                $link_title = $link['title'];
+                $link_target = $link['target'] ? $link['target'] : '_self';
+                ?>
+                <a class="btn-crwd btn-top nav-link mt-5" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>"><?php echo esc_html( $link_title ); ?></a>
+                <?php endif; ?>
+            </div>
+        </div>
+    </div>
+  </div>
+
 </div>
  
 <hr>

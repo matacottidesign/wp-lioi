@@ -22,7 +22,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 <div class="banner-top-page"></div>
 
   <div class="container">
-    <div class="py-8">
+    <div class="pt-8">
       <div class="row">
           <div class="col-12 col-sm-6">
           <h1><?php the_field('titolo_video_intervista'); ?></h1>
@@ -35,10 +35,9 @@ $container = get_theme_mod( 'understrap_container_type' );
     </div>
   </div>
 
-  <hr>
+  <div class="why" style="height: 300px"></div>
 
   <div class="container">
-    <div class="py-8">
       <div class="row">
           <div class="col-12 col-sm-6">
           <h1><?php the_field('titolo_showreel'); ?></h1>
@@ -48,13 +47,12 @@ $container = get_theme_mod( 'understrap_container_type' );
           <?php the_field('showreel'); ?>
           </div>
       </div>
-    </div>
   </div>
   
-  <hr>
+  <div class="why" style="height: 300px"></div>
 
   <div class="container">
-    <div class="py-8">
+    <div class="pb-8">
       <div class="row">
           <div class="col-12 col-sm-6">
           <h1><?php the_field('titolo_intervista_terzi'); ?></h1>
@@ -65,6 +63,25 @@ $container = get_theme_mod( 'understrap_container_type' );
           </div>
       </div>
     </div>
+  </div>
+
+  <!--CTA-->
+  <div class="pb-8">
+      <div class="container">
+        <div class="row text-center">
+            <div class="col-12 col-sm-6">
+                <?php 
+                $link = get_field('link_cta');
+                if( $link ): 
+                $link_url = $link['url'];
+                $link_title = $link['title'];
+                $link_target = $link['target'] ? $link['target'] : '_self';
+                ?>
+                <a class="btn-crwd btn-top nav-link mt-5" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>"><?php echo esc_html( $link_title ); ?></a>
+                <?php endif; ?>
+            </div>
+        </div>
+      </div>
   </div>
  
 <hr>
