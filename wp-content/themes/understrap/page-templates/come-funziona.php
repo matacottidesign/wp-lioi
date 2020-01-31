@@ -47,7 +47,7 @@ $container = get_theme_mod( 'understrap_container_type' );
             <div id="box1" class="card-header text-center">
               <p class="head-num">1</p>
               <h2>clicca</h2>
-              <p>sul pulsante in basso "Sostieni il nostro progetto"</p>
+              <p>sul pulsante in basso <b>"Sostieni il nostro progetto"</b></p>
             </div>
             <div class="card-body">
               
@@ -63,7 +63,7 @@ $container = get_theme_mod( 'understrap_container_type' );
             <div id="box2" class="card-header text-center">
               <p class="head-num">2</p>
               <h2>scegli</h2>
-              <p>la tua ricompensa su Produzioni dal Basso</p>
+              <p>la tua <b>ricompensa</b> su Produzioni dal Basso</p>
             </div>
             <div class="card-body">
               
@@ -79,7 +79,7 @@ $container = get_theme_mod( 'understrap_container_type' );
             <div id="box3" class="card-header text-center">
               <p class="head-num">3</p>
               <h2>seleziona</h2>
-              <p>il metodo di pagamento che reputi migliore</p>
+              <p>il <b>metodo di pagamento</b> che reputi migliore</p>
             </div>
             <div class="card-body">
               
@@ -95,7 +95,7 @@ $container = get_theme_mod( 'understrap_container_type' );
             <div id="box4" class="card-header text-center">
               <p class="head-num">4</p>
               <h2>condividi</h2>
-              <p>e sentiti parte del team di O.I. - L'arte in una frattura</p>
+              <p>e sentiti parte del team di <b>O.I. - L'arte in una frattura</b></p>
             </div>
             <div class="card-body">
               
