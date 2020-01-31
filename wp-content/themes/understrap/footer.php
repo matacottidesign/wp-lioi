@@ -25,7 +25,7 @@ $container = get_theme_mod( 'understrap_container_type' );
     <div class="container">
       <div class="row">
 
-        <div class="col-12 col-sm-4 pt-8">
+        <!-- <div class="col-12 col-sm-4 pt-8">
 
           <ul class="m-0 p-0">
             <li class="py-1">
@@ -53,46 +53,91 @@ $container = get_theme_mod( 'understrap_container_type' );
 
             
 
-		  </ul>
+		      </ul>
 		  
-		</div>
+		    </div>
 		
         <div class="col-12 col-sm-4 pt-8">
-        <ul class="m-0 p-0">
-        <li class="py-1">
-              <a href="#">L'AUTORE</a>
-              <ul>
-                <li>
-				<hr>
-                  <a href="#">SULLA CARTA</a>
-                  <hr>
-                </li>
-                <li>
-                  <a href="#">SULLO SCHERMO</a>
-                  <hr>
-                </li>
-              </ul>
+          <ul class="m-0 p-0">
+          <li class="py-1">
+                <a href="#">L'AUTORE</a>
+                <ul>
+                  <li>
+          <hr>
+                    <a href="#">SULLA CARTA</a>
+                    <hr>
+                  </li>
+                  <li>
+                    <a href="#">SULLO SCHERMO</a>
+                    <hr>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="py-1">
+                <a href="#">BLOG</a>
+              </li>
+
+              <li class="py-1">
+                <a href="#">CONTATTI</a>
+                <ul>
+                  <li>
+          <hr>
+                    <a href="#">PER I CURIOSI</a>
+                    <hr>
+                  </li>
+                  <li>
+                    <a href="#">PER LA STAMPA</a>
+                    <hr>
+                  </li>
+                </ul>
+              </li>
+          </ul>
+        </div> -->
+
+        <div class="col-12 col-sm-4 pt-8">
+          <ul class="m-0 p-0">
+
+            <li class="py-1">
+              <a href="#"><b>IL LIBRO</b></a>
             </li>
 
             <li class="py-1">
-              <a href="#">BLOG</a>
+              <a class="crwd" href="#"><b>IL CROWDFUNDING</b></a>
+            </li>
+            <li class="py-1">
+              <a class="light" href="#">COME FUNZIONA</a>
+            </li>
+            <li class="py-1">
+              <a class="crwd" class="light" href="#">SOSTIENI IL NOSTRO PROGETTO SU PRODUZIONI DAL BASSO</a>
+            </li>
+            <li class="py-1">
+              <a class="light" href="#">LA PAGINA DEI RINGRAZIAMENTI</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-12 col-sm-4 pt-8">
+          <ul class="m-0 p-0">
+
+            <li class="py-1">
+              <a href="#"><b>L'AUTORE</b></a>
+            </li>
+            <li class="py-1">
+              <a class="light" href="#">SULLA CARTA</a>
+            </li>
+            <li class="py-1">
+              <a class="light" href="#">SULLO SCHERMO</a>
             </li>
 
             <li class="py-1">
-              <a href="#">CONTATTI</a>
-              <ul>
-                <li>
-				<hr>
-                  <a href="#">PER I CURIOSI</a>
-                  <hr>
-                </li>
-                <li>
-                  <a href="#">PER LA STAMPA</a>
-                  <hr>
-                </li>
-              </ul>
+              <a href="#"><b>IL BLOG</b></a>
             </li>
-        </ul>
+
+            <li class="py-1">
+              <a href="#"><b>CONTATTACI</b></a>
+            </li>
+          </ul>
         </div>
     
     <div class="col-12 col-sm-4 pt-8">
