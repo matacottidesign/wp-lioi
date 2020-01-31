@@ -245,6 +245,12 @@ function dark_bg() {
   for (i = 0; i < footer.length; i++) {
     footer[i].style.backgroundColor = "#343a40";
   }
+
+  var test = document.getElementsByClassName("jsblack");
+  var i;
+  for (i = 0; i < test.length; i++) {
+    test[i].style.color = "#000";
+  }
   
 }
 

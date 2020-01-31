@@ -68,8 +68,8 @@ $container = get_theme_mod( 'understrap_container_type' );
                     <?php endif; ?>
                     </div>
                 </div>
-                <div class="card-body">
-                    <h1 class="card-title"><?php the_sub_field('titolo_articolo'); ?></h1>
+                <div class="card-body jsblack">
+                    <h1 class="card-title jsblack"><?php the_sub_field('titolo_articolo'); ?></h1>
                     <?php the_sub_field('riassunto_articolo'); ?>
 
                     <?php 

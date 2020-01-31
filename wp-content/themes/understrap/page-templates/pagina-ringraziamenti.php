@@ -114,7 +114,7 @@ $container = get_theme_mod( 'understrap_container_type' );
         <div class="row">
             <!--PAGINA SINISTRA-->
             <div class="col-12 col-sm-6 card book-page py-3">
-                <p><?php 
+                <p class="jsblack"><?php 
                     foreach($even as $index => $string){
                         print_r ($string . ' - ');   
                     }
@@ -123,7 +123,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
             <!--PAGINA DESTRA-->
             <div class="col-12 col-sm-6 card book-page py-3">
-                <p><?php 
+                <p class="jsblack"><?php 
                     foreach($odd as $ind => $str){
                         print_r ($str . ' - ');   
                 }
