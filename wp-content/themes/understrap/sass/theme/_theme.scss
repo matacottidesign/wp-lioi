@@ -225,18 +225,21 @@ a:hover{
 
 div{
     &.jumbotron{
-        background-image: url("<?php echo get_template_directory_uri(); ?>/../../img/prova.jpg") !important;
+        background-image: url("<?php echo get_template_directory_uri(); ?>/../../img/DOC_7670.jpg") !important;
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
         border-radius: inherit;
     }
     &.banner-top{ 
-        height: 700px !important;
+        height: 850px !important;
     }
     div{
         h2{
             font-family: 'Cutive Mono', monospace;
+            p{
+                font-size: 25px;
+            }
         }
     }
 }

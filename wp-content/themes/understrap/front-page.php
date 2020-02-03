@@ -21,10 +21,10 @@ get_header();
 <?php while ( have_posts() ) : the_post(); ?>
 
     <!--Jumbotron-->
-    <div class="jumbotron banner-top d-flex align-items-center">
-        <div class="container text-center hero-text">
-            <h1 class="whitetxt"><?php the_field('titolo_pagina'); ?></h1>
-            <h2 class="whitetxt mt-5"><?php the_field('sottotitolo_pagina'); ?></h2>
+    <div class="jumbotron banner-top">
+        <div class="container hero-text">
+            <h1><?php the_field('titolo_pagina'); ?></h1>
+            <h2 class="mt-3"><?php the_field('sottotitolo_pagina'); ?></h2>
         </div>
     </div>
          
