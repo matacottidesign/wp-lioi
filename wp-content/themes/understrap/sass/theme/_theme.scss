@@ -364,15 +364,23 @@ li{
 }
 
 //Pagina IL LIBRO
-.banner-top-page{
-    height: 350px !important;
-    background-image: url("<?php echo get_template_directory_uri(); ?>/../../img/prova.jpg") !important;
+.banner-libro{
+    height: 700px;
+    background-image: url("<?php echo get_template_directory_uri(); ?>/../../img/DOC_7750.jpg");
     background-position: center;
     background-size: cover; 
     background-repeat: no-repeat;
 }
 
 //IL CROWDFUNDING - COME FUNZIONA
+.banner-come-funziona{
+    height: 700px;
+    background-image: url("<?php echo get_template_directory_uri(); ?>/../../img/DOC_7637.jpg");
+    background-position: center;
+    background-size: cover; 
+    background-repeat: no-repeat;
+}
+
 .infographic{
     border: inherit;
     border-radius: inherit;
@@ -464,6 +472,14 @@ li{
 }
 
 //Pagina LA PAGINA DEI RINTRAZIAMENTI
+.banner-ringraziamenti{
+    height: 700px;
+    background-image: url("<?php echo get_template_directory_uri(); ?>/../../img/DOC_7819.jpg");
+    background-position: center;
+    background-size: cover; 
+    background-repeat: no-repeat;
+}
+
 .book{
     background-image: linear-gradient(#555, #111);
     box-shadow: 0px 0px 5px #555555;

@@ -144,7 +144,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 
 
-<div class="banner-top-page"></div>
+<div class="banner-ringraziamenti"></div>
 <div class="container">
 
   <div class="py-8">
