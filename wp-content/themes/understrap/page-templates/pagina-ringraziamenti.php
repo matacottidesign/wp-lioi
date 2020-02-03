@@ -72,14 +72,58 @@ $container = get_theme_mod( 'understrap_container_type' );
 
     $prova = array_combine($general_list2, $amount_array);
     arsort($prova);
+
+    //Stampa lista generale ordinate in $value decrescente
+    echo '<pre>';
+    print_r($prova);
+    echo '</pre>';
+    echo '<hr>';
  
     $counted_general_list = array_count_values($general_list);
     arsort($counted_general_list);
+
+    //Stampa lista donatori per numero di volte che hanno donato
+    echo '<pre>';
+    print_r($counted_general_list);
+    echo '</pre>';
+    echo '<hr>';
 
     $naming_list = [];
     foreach($counted_general_list as $k => $v){
         array_push($naming_list, $k);
     }
+    sort($naming_list);
+
+    //Stampa lista donatori in ordine alfabetico
+    echo '<pre>';
+    print_r($naming_list);
+    echo '</pre>';
+    echo '<hr>';
+    $lenght_naming_list = count($naming_list);
+    echo $lenght_naming_list;
+    echo '<hr>'; 
+
+    //================================
+    $start = 0;
+
+    /* while($start <= $lenght_naming_list){
+
+    $output = array_slice($naming_list, $start, 10, true);
+
+        foreach($output as $chiave => $valore){
+        
+            echo '<pre>';
+            print_r($valore);
+            echo '</pre>';
+
+        }
+
+    echo '===============';
+
+    $start += 10;
+
+    } */
+    //================================
 
     $even = [];
     $odd = [];
@@ -107,6 +151,34 @@ $container = get_theme_mod( 'understrap_container_type' );
     <?php the_field('descrizione'); ?>
   </div>
 
+  <div class="pb-8">
+    <div class="row">
+        <div id=magazine class="card w-100">
+        <?php
+        while($start <= $lenght_naming_list){
+
+        $output = array_slice($naming_list, $start, 10, true);
+        echo '<div>';
+    
+            foreach($output as $chiave => $valore){
+            
+                
+                echo '<pre>';
+                print_r($valore);
+                echo '</pre>';
+                
+    
+            }
+
+        echo '</div>';    
+        $start += 10;
+    
+        }
+    ?>
+        </div>
+    </div>
+  </div>
+
   <!--LIBRO-->
     <h1 class="text-center pb-5">grazie</h1>
     <div class="pb-8">
@@ -131,7 +203,8 @@ $container = get_theme_mod( 'understrap_container_type' );
             </div>
         </div>
     </div>
-    </div>
+
+</div>
     
 
     <?php

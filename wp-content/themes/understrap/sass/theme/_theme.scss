@@ -316,6 +316,10 @@ footer{
     background-color: $gray-100; 
 } 
 
+#logo{
+    height: 400px;
+}
+
 .light{
     font-weight: 150;
 } 
@@ -588,6 +592,25 @@ aside{
         }
     }
 }
+
+//Flipbook
+#magazine{
+    height: 804px;
+    transition: 1s ease;
+
+    div{
+        &.turn-page{
+            background-color:#ccc;
+            background-size:100% 100%;
+            box-shadow: 0px 0px 5px 5px #ccc;
+        }
+    }
+}
+
+#magazine:hover{
+    box-shadow: 0px 0px 5px 5px #eee;
+}
+
 
 
 

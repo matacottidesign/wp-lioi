@@ -59,13 +59,13 @@ get_header();
 
     </div>
 
-    <div class="why" style="height: 300px"></div>
+    <hr>
 
     <!--Quote banner-->
     <div class="container text-center">
 
         <!-- Quote -->
-        <div class="pb-8 pt-5 kim">
+        <div class="py-8 kim">
         <i id="citazione" class="cite-top"><?php the_field('citazione_home'); ?></i>
         <i><?php the_field('autore_citazione'); ?></i>
         </div>
