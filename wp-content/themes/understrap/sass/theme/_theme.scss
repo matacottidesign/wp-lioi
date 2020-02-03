@@ -226,10 +226,8 @@ a:hover{
 div{
     &.jumbotron{
         background-image: url("<?php echo get_template_directory_uri(); ?>/../../img/DOC_7670.jpg") !important;
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
         border-radius: inherit;
+        @include banner-bg;
     }
     &.banner-top{ 
         height: 850px !important;
@@ -267,9 +265,7 @@ div{
 
 .box-video{
     background-image: url("<?php echo get_template_directory_uri(); ?>/../../img/scheletro1.jpg") !important;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    @include banner-bg;
 }
 
 /*========================================================MAIN*/
@@ -288,24 +284,18 @@ div{
 
 .what{
     background-image: url("<?php echo get_template_directory_uri(); ?>/../../img/what.png");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    @include banner-bg;
 }
 
 .why{
     background-image: url("<?php echo get_template_directory_uri(); ?>/../../img/why.png");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    @include banner-bg;
 }
 
 .banner-bottom{
     height: 700px;
     background-image: url("<?php echo get_template_directory_uri(); ?>/../../img/box4-img2.jpg") !important;
-    background-position: center;
-    background-size: cover; 
-    background-repeat: no-repeat;
+    @include banner-bg;
 
     h2{
         color: $primary; 
@@ -335,9 +325,7 @@ button{
 }
 
 .cite{
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    @include banner-bg;
 }
 
 li{
@@ -367,18 +355,14 @@ li{
 .banner-libro{
     height: 700px;
     background-image: url("<?php echo get_template_directory_uri(); ?>/../../img/DOC_7750.jpg");
-    background-position: center;
-    background-size: cover; 
-    background-repeat: no-repeat;
+    @include banner-bg;
 }
 
 //IL CROWDFUNDING - COME FUNZIONA
 .banner-come-funziona{
     height: 700px;
     background-image: url("<?php echo get_template_directory_uri(); ?>/../../img/DOC_7637.jpg");
-    background-position: center;
-    background-size: cover; 
-    background-repeat: no-repeat;
+    @include banner-bg;
 }
 
 .infographic{
@@ -475,9 +459,7 @@ li{
 .banner-ringraziamenti{
     height: 700px;
     background-image: url("<?php echo get_template_directory_uri(); ?>/../../img/DOC_7819.jpg");
-    background-position: center;
-    background-size: cover; 
-    background-repeat: no-repeat;
+    @include banner-bg;
 }
 
 .book{
@@ -506,8 +488,26 @@ iframe{
     height: 550px;
 }
 
+//AUTORE
+.banner-carta{
+    height: 700px;
+    background-image: url("<?php echo get_template_directory_uri(); ?>/../../img/DOC_7841.jpg");
+    @include banner-bg;
+} 
+.banner-schermo{
+    height: 700px;
+    background-image: url("<?php echo get_template_directory_uri(); ?>/../../img/MAT_2976.jpg");
+    @include banner-bg;
+}
+
 
 //IL BLOG
+.banner-blog{
+    height: 700px;
+    background-image: url("<?php echo get_template_directory_uri(); ?>/../../img/DOC_7731.jpg");
+    @include banner-bg;
+}
+
 div{
     &.blog-card{
         border: inherit;

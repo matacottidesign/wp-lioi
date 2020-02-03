@@ -19,7 +19,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 <?php endif; ?>
 
 
-<div class="banner-top-page"></div>
+<div class="banner-carta"></div>
 <div class="container">
 
   <div class="py-8">
