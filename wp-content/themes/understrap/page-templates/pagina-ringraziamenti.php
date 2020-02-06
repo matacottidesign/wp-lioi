@@ -74,19 +74,19 @@ $container = get_theme_mod( 'understrap_container_type' );
     arsort($prova);
 
     //Stampa lista generale ordinate in $value decrescente
-    echo '<pre>';
-    print_r($prova);
-    echo '</pre>';
-    echo '<hr>';
+    //echo '<pre>';
+    //print_r($prova);
+    //echo '</pre>';
+    //echo '<hr>';
  
     $counted_general_list = array_count_values($general_list);
     arsort($counted_general_list);
 
     //Stampa lista donatori per numero di volte che hanno donato
-    echo '<pre>';
-    print_r($counted_general_list);
-    echo '</pre>';
-    echo '<hr>';
+    //echo '<pre>';
+    //print_r($counted_general_list);
+    //echo '</pre>';
+    //echo '<hr>';
 
     $naming_list = [];
     foreach($counted_general_list as $k => $v){
@@ -95,34 +95,16 @@ $container = get_theme_mod( 'understrap_container_type' );
     sort($naming_list);
 
     //Stampa lista donatori in ordine alfabetico
-    echo '<pre>';
-    print_r($naming_list);
-    echo '</pre>';
-    echo '<hr>';
+    //echo '<pre>';
+    //print_r($naming_list);
+    //echo '</pre>';
+    //echo '<hr>';
     $lenght_naming_list = count($naming_list);
-    echo $lenght_naming_list;
-    echo '<hr>'; 
+    //echo $lenght_naming_list;
+    //echo '<hr>'; 
 
     //================================
     $start = 0;
-
-    /* while($start <= $lenght_naming_list){
-
-    $output = array_slice($naming_list, $start, 10, true);
-
-        foreach($output as $chiave => $valore){
-        
-            echo '<pre>';
-            print_r($valore);
-            echo '</pre>';
-
-        }
-
-    echo '===============';
-
-    $start += 10;
-
-    } */
     //================================
 
     $even = [];
@@ -151,15 +133,16 @@ $container = get_theme_mod( 'understrap_container_type' );
     <?php the_field('descrizione'); ?>
   </div>
 
-  <div class="pb-8">
-    <div class="row">
-        <div id=magazine class="card w-100">
+  <hr>
+
+  <div class="py-5">
+    <div id="magazine" class="card my-5 w-100">
         <?php
         while($start <= $lenght_naming_list){
 
         $output = array_slice($naming_list, $start, 10, true);
-        echo '<div>';
-    
+        echo '<div class="text-center">';
+
             foreach($output as $chiave => $valore){
             
                 
@@ -167,17 +150,18 @@ $container = get_theme_mod( 'understrap_container_type' );
                 print_r($valore);
                 echo '</pre>';
                 
-    
+
             }
 
         echo '</div>';    
         $start += 10;
-    
+
         }
-    ?>
-        </div>
+        ?>
     </div>
   </div>
+
+  <hr>
 
   <!--LIBRO-->
     <h1 class="text-center pb-5">grazie</h1>

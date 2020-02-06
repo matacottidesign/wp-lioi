@@ -24,7 +24,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 	<!--Turnjs-->
 	<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
-	<script type="text/javascript" src="turn.min.js"></script>
+	<script type="text/javascript" src="../js/turn.min.js"></script>
 
 	<!--Font Awesome Icons-->
 	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
