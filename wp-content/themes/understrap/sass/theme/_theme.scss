@@ -297,9 +297,10 @@ div{
     background-image: url("<?php echo get_template_directory_uri(); ?>/../../img/box4-img2.jpg") !important;
     @include banner-bg;
 
-    h2{
+    p{
         color: $primary; 
         font-family: 'Cedarville Cursive', cursive !important;
+        font-size: 35px;
     }
 }
 

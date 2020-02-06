@@ -75,15 +75,15 @@ $container = get_theme_mod( 'understrap_container_type' );
         </div>
     
         <div class="col-12 col-lg-3 pt-8">
-          <h3>Sostieni il nostro progetto</h3>
+          <h3>sostieni</h3>
           <a class="crwd" href="#">SCOPRI COME FARE</a>
 
-          <h3 class="pt-5">Contatti</h3>
+          <h3 class="pt-5">contatti</h3>
           <a class="button" href="mailto:info@arteinunafrattura.it">info@arteinunafrattura.it</a><br>
           <a class="button" href="mailto:press@arteinunafrattura.it">press@arteinunafrattura.it</a><br>
           <a class="button" href="mailto:staff@arteinunafrattura.it">staff@arteinunafrattura.it</a><br>
 
-          <h3 class="pt-5">Social</h3>
+          <h3 class="pt-5">social</h3>
           <ul class="p-0 m-0 list-inline">
             <li class="list-inline-item">
             <a href="https://www.facebook.com/Fabianolioi/" target="_blank"><i class="fab fa-facebook-f"></i></a>

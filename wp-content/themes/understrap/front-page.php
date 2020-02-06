@@ -203,7 +203,7 @@ get_header();
     <!--Bottom banner-->
     <div class="banner-bottom d-flex align-items-end pb-5">
         <div class="container">
-            <h2 class="jsblack"><?php the_field('descrizione_banner_bottom'); ?></h2>
+            <?php the_field('descrizione_banner_bottom'); ?>
             <div class="row text-center d-flex justify-content-center">
                 <div class="col-12 col-lg-6">
                     <?php 
