@@ -134,58 +134,31 @@ $container = get_theme_mod( 'understrap_container_type' );
     <?php the_field('descrizione'); ?>
   </div>
 
-  <hr>
+  <h1 class="text-center pb-5">grazie</h1>
 
-  <div class="py-5">
-    <div id="magazine" class="card my-5 w-100">
-        <?php
-        while($start <= $lenght_naming_list){
+    <div class="card copertina mb-5">
+        <div id="magazine" class="card w-100">
+            <?php
+            while($start <= $lenght_naming_list){ 
 
-        $output = array_slice($naming_list, $start, 10, true);
-        echo '<div class="text-center">';
+            $output = array_slice($naming_list, $start, 10, true);
+            echo '<div class="text-center">';
 
-            foreach($output as $chiave => $valore){
-            
+                foreach($output as $chiave => $valore){
                 
-                echo '<pre>';
-                print_r($valore);
-                echo '</pre>';
-                
+                    
+                    echo '<pre>';
+                    print_r($valore);
+                    echo '</pre>';
+                    
+
+                }
+
+            echo '</div>';    
+            $start += 10;
 
             }
-
-        echo '</div>';    
-        $start += 10;
-
-        }
-        ?>
-    </div>
-  </div>
-
-  <hr>
-
-  <!--LIBRO-->
-    <h1 class="text-center pb-5">grazie</h1>
-    <div class="pb-8">
-        <div class="card px-5 py-2 book">
-        <div class="row">
-            <!--PAGINA SINISTRA-->
-            <div class="col-12 col-sm-6 card book-page py-3">
-                <p class="jsblack"><?php 
-                    foreach($even as $index => $string){
-                        print_r ($string . ' - ');   
-                    }
-                ?></p>
-            </div>
-
-            <!--PAGINA DESTRA-->
-            <div class="col-12 col-sm-6 card book-page py-3">
-                <p class="jsblack"><?php 
-                    foreach($odd as $ind => $str){
-                        print_r ($str . ' - ');   
-                }
-                ?></p>
-            </div>
+            ?>
         </div>
     </div>
 
@@ -196,18 +169,20 @@ $container = get_theme_mod( 'understrap_container_type' );
     mysqli_close($DBconnect);
     ?>
 
-    <div class="row pb-8 text-center">
-      <div class="col-12 col-lg-6">
-          <?php 
-          $link = get_field('link');
-          if( $link ): 
-          $link_url = $link['url'];
-          $link_title = $link['title'];
-          $link_target = $link['target'] ? $link['target'] : '_self';
-          ?>
-          <a class="btn-crwd btn-top nav-link py-2" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>"><?php echo esc_html( $link_title ); ?></a>
-          <?php endif; ?>
-      </div>
+    <div class="container">
+        <div class="row pb-8 text-center">
+            <div class="col-12 col-lg-6">
+                <?php 
+                $link = get_field('link');
+                if( $link ): 
+                $link_url = $link['url'];
+                $link_title = $link['title'];
+                $link_target = $link['target'] ? $link['target'] : '_self';
+                ?>
+                <a class="btn-crwd btn-top nav-link py-2" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>"><?php echo esc_html( $link_title ); ?></a>
+                <?php endif; ?>
+            </div>
+        </div>
     </div>
 
 
