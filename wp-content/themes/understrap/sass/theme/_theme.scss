@@ -626,5 +626,26 @@ aside{
 }
 
 
+//CTA Bottom
+div{
+    .cta-bottom{
+        button{
+            background-color: $primary;
+            border: inherit;
+            
+            a{
+                color: $white;
+            }
+        }
+
+        button:hover{
+            background-color: $secondary;
+            a{
+                color: $white;
+            }
+        }
+    }
+}
+
 
 

@@ -29,7 +29,7 @@ $sidebar_pos = get_theme_mod( 'understrap_sidebar_position' );
 
 		<h3 class="pr-color">Contattaci</h3>
 		<p>Sei interessata/o al nostro progetto e vuoi saperne di più? Compila il form e inviaci un messaggio: saremo felici di ricontattarti via email!</p>
-		<a href="#">Vai al form</a>
+		<a href="http://localhost:8888/wp-lioi/contattaci/">Vai al form</a>
 		<hr class="my-3">
 	</div>
 

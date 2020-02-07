@@ -16,8 +16,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 <?php get_template_part( 'sidebar-templates/sidebar', 'footerfull' ); ?>
 
 
-  <div class="fixed-bottom mb-3 mr-3 text-right bottom-btn">
-    <button id="bottom-btn" type="button" class="btn btn-primary" onclick="hideButton()">SOSTIENI IL <br> NOSTRO PROGETTO</button>
+  <div class="cta-bottom fixed-bottom mb-3 mr-3 text-right bottom-btn">
+    <button id="bottom-btn" type="button" class="btn btn-primary" onclick="hideButton()"><a href="#">SOSTIENI IL <br> NOSTRO PROGETTO</a></button>
   </div>
 
 
