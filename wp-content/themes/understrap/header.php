@@ -21,11 +21,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 	<meta name="keywords" content="lioi, fabiano lioi" />
   	<meta http-equiv="author" content="Psicografici" />
 	<link rel="profile" href="http://gmpg.org/xfn/11">
-
-	<!--Turnjs-->
-	<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
-	<script type="text/javascript" src="../js/turn.min.js"></script>
-
+	
 	<!--Font Awesome Icons-->
 	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
 

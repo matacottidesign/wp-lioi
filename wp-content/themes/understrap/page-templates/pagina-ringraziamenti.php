@@ -40,7 +40,8 @@ $container = get_theme_mod( 'understrap_container_type' );
         $cognome = $_POST["lastname"];
         $mail = $_POST["email"];
         $donazione = $_POST["amount"];
-    
+
+        //$wpdb->insert( $table, $data, $format );
         $test = mysqli_query($DBconnect, "INSERT INTO xyz_donatori(nome, cognome, mail, donazione) VALUES('$nome','$cognome', '$mail', '$donazione')");
 
         if(!$test){
