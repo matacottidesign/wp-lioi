@@ -614,7 +614,7 @@ aside{
                 pre{
                     font-family: 'Cedarville Cursive', cursive;
                     overflow: inherit;
-                    font-size: 25px;
+                    font-size: 25px; 
                 }
             }
         }
@@ -628,7 +628,7 @@ aside{
 
 //CTA Bottom
 div{
-    .cta-bottom{
+    &.cta-bottom{
         button{
             background-color: $primary;
             border: inherit;
