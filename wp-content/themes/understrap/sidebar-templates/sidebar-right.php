@@ -24,7 +24,7 @@ $sidebar_pos = get_theme_mod( 'understrap_sidebar_position' );
 	<div class="right-widget-area">
 		<h3 class="pr-color">Sostieni il nostro progetto</h3>
 		<p>O.I. – L’arte in una frattura di Fabiano Lioi può essere stampato e può diventare una mostra solo perché tu lo vuoi. Ci stai?</p>
-		<a href="#">Scopri come</a>
+		<a href="http://localhost:8888/wp-lioi/coming-soon/">Scopri come</a>
 		<hr class="my-3">
 
 		<h3 class="pr-color">Contattaci</h3>

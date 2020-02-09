@@ -17,7 +17,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 
   <div class="cta-bottom fixed-bottom mb-3 mr-3 text-right bottom-btn">
-    <button id="bottom-btn" type="button" class="btn btn-primary" onclick="hideButton()"><a href="#">SOSTIENI IL <br> NOSTRO PROGETTO</a></button>
+    <button id="bottom-btn" type="button" class="btn btn-primary" onclick="hideButton()"><a href="http://localhost:8888/wp-lioi/coming-soon/">SOSTIENI IL <br> NOSTRO PROGETTO</a></button>
   </div>
 
 

@@ -150,11 +150,8 @@ get_header();
         </div>
     </div>
     
-
-    
     <div class="what" style="height: 300px"></div>
     
-
     <!--What banner-->
     <div class="container">
         <h1><?php the_field('titolo_paragrafo_1'); ?></h1>
@@ -174,11 +171,8 @@ get_header();
         </div>
     </div>
     
-
-    
     <div class="why" style="height: 300px"></div>
     
-
     <!--Why banner-->
     <div class="pb-8">
         <div class="container">
