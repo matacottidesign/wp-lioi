@@ -23,15 +23,6 @@ $container = get_theme_mod( 'understrap_container_type' );
 
     <?php
 
-    // [CONNESSIONE AL DATABASE]
-    $DBconnect = mysqli_connect('localhost', 'root', 'root', 'sito_lioi');
-
-    if(!$DBconnect){
-    die('Impossibile connettersi al database');
-    }
-
-
-
     // [CHECK FORM]
     if(isset($_POST["submit"])){
     
@@ -51,7 +42,6 @@ $container = get_theme_mod( 'understrap_container_type' );
                 'donazione' => $donazione
             )
         );
-        //$test = mysqli_query($DBconnect, "INSERT INTO xyz_donatori(nome, cognome, mail, donazione) VALUES('$nome','$cognome', '$mail', '$donazione')");
 
         if(!$wpdb){
         echo 'Messaggio di errore' . mysqli_error('$DBconnect');
@@ -80,9 +70,9 @@ $container = get_theme_mod( 'understrap_container_type' );
     while($num <= $conteggio){
 
         $properties = get_object_vars($dati[$num]);
-        echo '<pre>';
-        print_r($properties);
-        echo '</pre>';
+        //echo '<pre>';
+        //print_r($properties);
+        //echo '</pre>';
         
         array_push($lista_generale, $properties["nome"] . ' ' . $properties["cognome"]);
         array_push($lista_generale2, $properties["nome"] . ' ' . $properties["cognome"]);
@@ -96,19 +86,19 @@ $container = get_theme_mod( 'understrap_container_type' );
     arsort($nomiEsomma);
 
     //Stampa lista generale ordinate in $value decrescente
-    echo '<pre>';
-    print_r($nomiEsomma);
-    echo '</pre>';
-    echo '<hr>';
+    //echo '<pre>';
+    //print_r($nomiEsomma);
+    //echo '</pre>';
+    //echo '<hr>';
 
     $numeroVolteDonazione = array_count_values($lista_generale);
     arsort($lista_generale);
     
     //Stampa lista donatori per numero di volte che hanno donato
-    echo '<pre>';
-    print_r($numeroVolteDonazione);
-    echo '</pre>';
-    echo '<hr>';
+    //echo '<pre>';
+    //print_r($numeroVolteDonazione);
+    //echo '</pre>';
+    //echo '<hr>';
 
     $lista_solo_nomi = [];
     foreach($numeroVolteDonazione as $k => $v){
@@ -116,103 +106,21 @@ $container = get_theme_mod( 'understrap_container_type' );
     }
     sort($lista_solo_nomi);
     //Stampa lista donatori senza ripetizioni ed in ordine alfabetico
-    echo '<pre>';
-    print_r($lista_solo_nomi);
-    echo '</pre>';
-    echo '<hr>';
+    //echo '<pre>';
+    //print_r($lista_solo_nomi);
+    //echo '</pre>';
+    //echo '<hr>';
 
     foreach($lista_solo_nomi as $indice => $nome){
-        echo $nome . '<br>';
+        //echo $nome . '<br>';
     }
 
     $numero_donatori = count($lista_solo_nomi);
-    echo $numero_donatori - 1; // -1 perchè si comincia dal valore 1 mentre 0 è vuoto.
+    //echo $numero_donatori - 1; // -1 perchè si comincia dal valore 1 mentre 0 è vuoto.
 
     $start = 0;
 
-    
-
-
-
-
-   
-
-
-
-    
-
-    
-    
-    //$test2 = mysqli_query($DBconnect, "SELECT*FROM xyz_donatori");
-    //if(!$test2){
-    //echo 'Messaggio di errore' . mysqli_error('$DBconnect');
-    //}
-
-    $general_list = [];
-    $general_list2 = [];
-    $amount_array = [];
-    
-    while($rowDatas = mysqli_fetch_assoc($test2)){
-     
-        array_push($general_list, $rowDatas["nome"] . ' ' . $rowDatas["cognome"]);
-        array_push($general_list2, $rowDatas["nome"] . ' ' . $rowDatas["cognome"]);
-        array_push($amount_array, $rowDatas["donazione"]);
-
-    }
-
-    $prova = array_combine($general_list2, $amount_array);
-    arsort($prova);
-
-    //Stampa lista generale ordinate in $value decrescente
-    //echo '<pre>';
-    //print_r($prova);
-    //echo '</pre>';
-    //echo '<hr>';
- 
-    $counted_general_list = array_count_values($general_list);
-    arsort($counted_general_list);
-
-    //Stampa lista donatori per numero di volte che hanno donato
-    //echo '<pre>';
-    //print_r($counted_general_list);
-    //echo '</pre>';
-    //echo '<hr>';
-
-    $naming_list = [];
-    foreach($counted_general_list as $k => $v){
-        array_push($naming_list, $k);
-    }
-    sort($naming_list);
-
-    //Stampa lista donatori in ordine alfabetico
-    //echo '<pre>';
-    //print_r($naming_list);
-    //echo '</pre>';
-    //echo '<hr>';
-    $lenght_naming_list = count($naming_list);
-    //echo $lenght_naming_list;
-    //echo '<hr>'; 
-
-    //================================
-    
-    //================================
-
-    $even = [];
-    $odd = [];
-    foreach($naming_list as $number => $name){
-
-        if($number%2 === 0){
-            array_push($even, $name);
-        }else{
-            array_push($odd, $name);
-        }
-
-    }
-    ?>
-
-    
-
-
+?>
 
 
 
