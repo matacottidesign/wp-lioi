@@ -76,7 +76,7 @@ $container = get_theme_mod( 'understrap_container_type' );
     
         <div class="col-12 col-lg-3 pt-8">
           <h3>sostieni</h3>
-          <a class="crwd" href="#">SCOPRI COME FARE</a>
+          <a class="crwd" href="http://localhost:8888/wp-lioi/coming-soon/">SCOPRI COME FARE</a>
 
           <h3 class="pt-5">contatti</h3>
           <a class="button" href="mailto:info@arteinunafrattura.it">info@arteinunafrattura.it</a><br>

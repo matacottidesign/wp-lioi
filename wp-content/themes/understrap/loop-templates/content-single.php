@@ -27,7 +27,10 @@ defined( 'ABSPATH' ) || exit;
 
 	<div class="entry-content">
 
-		<?php the_content(); ?>
+		<!-- Il contenuto dell'articolo comincia qui -->
+		<div class="py-8">
+			<?php the_content(); ?>
+		</div>
 
 		<?php
 		wp_link_pages(
