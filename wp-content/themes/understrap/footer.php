@@ -33,14 +33,14 @@ $container = get_theme_mod( 'understrap_container_type' );
           <ul class="m-0 p-0">
 
             <li class="py-1">
-              <a href="#"><b>IL LIBRO</b></a>
+              <a href="http://localhost:8888/wp-lioi/libro/"><b>IL LIBRO</b></a>
             </li>
 
             <li class="py-1">
               <a class="crwd" href="#"><b>IL CROWDFUNDING</b></a>
             </li>
             <li class="py-1">
-              <a class="light" href="#">COME FUNZIONA</a>
+              <a class="light" href="http://localhost:8888/wp-lioi/come-funziona/">COME FUNZIONA</a>
             </li>
             <li class="py-1">
               <a class="crwd" class="light" href="#">SOSTIENI IL NOSTRO PROGETTO SU PRODUZIONI DAL BASSO</a>
@@ -58,18 +58,18 @@ $container = get_theme_mod( 'understrap_container_type' );
               <a href="#"><b>L'AUTORE</b></a>
             </li>
             <li class="py-1">
-              <a class="light" href="#">SULLA CARTA</a>
+              <a class="light" href="http://localhost:8888/wp-lioi/sulla-carta/">SULLA CARTA</a>
             </li>
             <li class="py-1">
-              <a class="light" href="#">SULLO SCHERMO</a>
-            </li>
-
-            <li class="py-1">
-              <a href="#"><b>IL BLOG</b></a>
+              <a class="light" href="http://localhost:8888/wp-lioi/sullo-schermo/">SULLO SCHERMO</a>
             </li>
 
             <li class="py-1">
-              <a href="#"><b>CONTATTACI</b></a>
+              <a href="http://localhost:8888/wp-lioi/blog/"><b>IL BLOG</b></a>
+            </li>
+
+            <li class="py-1">
+              <a href="http://localhost:8888/wp-lioi/contattaci/"><b>CONTATTACI</b></a>
             </li>
           </ul>
         </div>
