@@ -312,6 +312,10 @@ footer{
 
 #logo{
     height: 400px;
+    background-image: url("<?php echo get_template_directory_uri(); ?>/../../img/logo-def.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .light{
